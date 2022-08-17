@@ -1,4 +1,4 @@
-.title-costomers {
+.regular-customers__title {
     color: var(--tittel-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -8,15 +8,15 @@
     margin-bottom: 50px;
 }
 
-.regular-customers-list {
+.regular-customers__list {
     display: flex;
 }
 
-.regular-customers-item:not(:first-child) {
+.regular-customers__item:not(:first-child) {
     margin-left: 30px;
 }
 
-.regular-customers-link {
+.regular-customers__link {
     display: flex;
     width: 170px;
     height: 92px;
@@ -28,14 +28,16 @@
     transition-property: color, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
 }
 
-.regular-customers-link:hover,
-.regular-customers-link:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-}
 
-.icon-company {
+
+.regular-customers__icon {
     fill: currentColor;
 }

@@ -1,4 +1,4 @@
-.footer-flex-container {
+.footer__container {
     display: flex;
     align-items: baseline;
 }
@@ -12,15 +12,15 @@
 
 
 
-.adress-footer {
+.footer__adress {
     margin-top: 20px;
 }
 
-.address-list-item:not(:last-child) {
+.footer__address-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.adress-item {
+.adress__item {
     margin-bottom: 9px;
     margin-left: 0;
 }
@@ -36,6 +36,11 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+   
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 
@@ -50,24 +55,23 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
-}
 
-.contact-footer:hover,
-.contact-footer:focus {
-    color: var(--accent-color)
-}
-
-.street:hover,
-.street:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+            color: var(--accent-color)
+        }
 }
 
 
-.link-wrapper {
+
+
+
+
+.footer__link-wrapper {
     margin-right: 70px;
 }
 
-.text-footer-icon {
+.footer__text-icon {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -76,15 +80,15 @@
     margin-bottom: 20px;
 }
 
-.list-icon-wrapper {
+.footer__list-icon-wrapper list{
     display: flex;
 }
 
-.item-footer-icon:not(:last-child) {
+.footer__item-icon:not(:last-child) {
     margin-right: 10px;
 }
 
-.footer-link-icon {
+.footer__link-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,14 +102,16 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+        }
 }
 
-.footer-link-icon:hover,
-.footer-link-icon:focus {
-    background-color: var(--accent-color);
-}
 
-.footer-icon-wrapper {
+
+.footer__icon-wrapper {
     margin-right: auto;
 }
 
@@ -141,11 +147,13 @@
     outline: none;
     color: var(--background-color);
     transition: border-color 250ms cubic-bezier(0.5, 0, 0.5, 1);
+
+     &:focus {
+                border-color: var(--background-color);
+            }
 }
 
-.subscription-input:focus {
-    border-color: var(--background-color);
-}
+
 
 .subscription-btn {
     margin-top: 0;
@@ -164,9 +172,10 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--background-color);
     transition: background-color 250ms cubic-bezier(0.5, 0, 0.5, 1);
+
+    &:focus,
+    &:hover {
+        background-color: var(--btn-background-color);
+    }
 }
 
-.subscription-btn:focus,
-.subscription-btn:hover {
-    background-color: var(--btn-background-color);
-}

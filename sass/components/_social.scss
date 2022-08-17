@@ -1,4 +1,4 @@
-.icon-social-network {
+.icon-social__network {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,15 +17,16 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+
+    &:hover,
+    &:focus {
+            color: var(--background-color);
+            background-color: var(--accent-color);
+        }
 }
 
-.icon-social-link:hover,
-.icon-social-link:focus {
-    color: var(--background-color);
-    background-color: var(--accent-color);
-}
 
-.icon-social-item:not(:last-child) {
+.icon-social__item:not(:last-child) {
     margin-right: 10px;
 }
 

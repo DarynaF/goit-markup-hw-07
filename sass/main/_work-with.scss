@@ -3,11 +3,11 @@
     margin-bottom: 94px;
 }
 
-.work-with-img {
+.work-with__img {
     position: relative;
 }
 
-.work-with-description {
+.work-with__description {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
     bottom: 0;
 }
 
-.work-with-titel {
+.work-with__titel {
     color: var(--tittel-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -33,7 +33,7 @@
 }
 
 
-.work-with-list {
+.work-with__list {
     display: flex;
     flex-wrap: wrap;
     column-gap: var(--card-set-gap);

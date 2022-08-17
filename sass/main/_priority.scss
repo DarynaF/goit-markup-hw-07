@@ -3,13 +3,13 @@
 }
 
 
-.priority-list {
+.priority__list {
     display: flex;
     column-gap: var(--card-set-gap);
     flex-basis: calc((100% - 90px) / 4);
 }
 
-.priority-titel {
+.priority__titel {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -19,14 +19,14 @@
     margin-bottom: 10px;
 }
 
-.priority-text {
+.priority__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: var(--letter-spacing);
 }
 
-.icon-priority {
+.priority__icon {
     max-width: 270;
     height: 120;
     padding: 25px 100px;
