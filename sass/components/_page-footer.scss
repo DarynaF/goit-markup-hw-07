@@ -71,7 +71,7 @@
     margin-right: 70px;
 }
 
-.footer__text-icon {
+.text-footer-icon {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -80,15 +80,15 @@
     margin-bottom: 20px;
 }
 
-.footer__list-icon-wrapper list{
+.list-icon-wrapper {
     display: flex;
 }
 
-.footer__item-icon:not(:last-child) {
+.item-footer-icon:not(:last-child) {
     margin-right: 10px;
 }
 
-.footer__link-icon {
+.footer-link-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,7 +111,7 @@
 
 
 
-.footer__icon-wrapper {
+.footer-icon-wrapper {
     margin-right: auto;
 }
 

@@ -528,7 +528,7 @@ body {
   margin-right: 70px;
 }
 
-.footer__text-icon {
+.text-footer-icon {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -536,15 +536,15 @@ body {
   margin-bottom: 20px;
 }
 
-.footer__list-icon-wrapper list{
+.list-icon-wrapper {
   display: flex;
 }
 
-.footer__item-icon:not(:last-child) {
+.item-footer-icon:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer__link-icon {
+.footer-link-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -557,11 +557,11 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
 }
-.footer__link-icon:hover, .footer__link-icon:focus {
+.footer-link-icon:hover, .footer-link-icon:focus {
   background-color: var(--accent-color);
 }
 
-.footer__icon-wrapper {
+.footer-icon-wrapper {
   margin-right: auto;
 }
 
